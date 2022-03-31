@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Antone DEMO';
+    src: url('AntoneDEMO-Clean.eot');
+    src: url('AntoneDEMO-Clean.eot?#iefix') format('embedded-opentype'),
+        url('AntoneDEMO-Clean.woff2') format('woff2'),
+        url('AntoneDEMO-Clean.woff') format('woff'),
+        url('AntoneDEMO-Clean.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bite Chalk';
+    src: url('BiteChalkBold-Regular.eot');
+    src: url('BiteChalkBold-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BiteChalkBold-Regular.woff2') format('woff2'),
+        url('BiteChalkBold-Regular.woff') format('woff'),
+        url('BiteChalkBold-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

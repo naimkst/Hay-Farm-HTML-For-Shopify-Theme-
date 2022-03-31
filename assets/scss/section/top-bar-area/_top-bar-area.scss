@@ -1,0 +1,28 @@
+/*-------------------------
+#.top-bar-area
+--------------------------*/
+.top-bar-area {
+    background-image: url('../images/topbar-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1.7rem;
+    .single-advertisment {
+        text-align: center;
+        h4 {
+            margin: 0;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            color: var(--white);
+            letter-spacing: 2px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .top-bar-area .single-advertisment h4 {
+        font-size: 1.6rem;
+    }
+    .top-bar-area {
+        padding: .8rem 0;
+    }
+}

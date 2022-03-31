@@ -1,0 +1,75 @@
+/*-------------------------
+#.service-area
+--------------------------*/
+.service-area {
+    display: flex;
+    align-items: center;
+    min-height: 930px;
+    background-image: url('../images/service-area-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .single-service {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-image: url('../images/service-box-bg.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+        min-height: 388px;
+        &.service-bg-two {
+            background-image: url('../images/service-box-bg-two.png');
+        }
+        .service-info {
+            max-width: 470px;
+            margin: 0 auto;
+        }
+        h2 {
+            margin-bottom: 2.5rem;
+            font-size: 4.8rem;
+            text-transform: uppercase;
+            color: var(--white);
+        }
+        p {
+            margin-bottom: 3.5rem;
+            font-size: 2rem;
+            line-height: 3rem;
+            color: var(--white);
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .service-area .single-service h2 {
+        font-size: 3.6rem;
+    }
+    .service-area .single-service p {
+        font-size: 1.4rem;
+    }
+    .service-area {
+        min-height: 768px;
+        padding: 6rem 0;
+    }
+    .service-area .single-service {
+        margin: 1.5rem 0;
+    }
+    .service-area .single-service {
+        min-height: auto;
+        padding: 6rem 3rem;
+    }
+}
+@media (max-width: 480px) {
+    .service-area .single-service h2 {
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+    }
+    .service-area .single-service p {
+        margin-bottom: 2.5rem;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+    .service-area .single-service {
+        padding: 4rem 2rem;
+    }
+}

@@ -1,0 +1,44 @@
+/*-------------------------
+#.section-title
+--------------------------*/
+.section-title {
+    h2 {
+        margin-bottom: 3rem;
+        font-size: 4.8rem;
+        text-transform: uppercase;
+        color: var(--primary-color);
+    }
+    p {
+        font-size: 2rem;
+        line-height: 3rem;
+        text-transform: uppercase;
+        color: var(--bColor);
+        max-width: 755px;
+        margin: 0 auto;
+    }
+}
+.section-inner-title {
+    margin-bottom: 5rem;
+    font-size: 6rem;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+@media (max-width: 991px) {
+    .section-title h2 {
+        font-size: 4rem;
+    }
+    .section-title p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+}
+@media (max-width: 575px) {
+    .section-title h2 {
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+    }
+    .section-title p {
+        font-size: 1.2rem;
+        line-height: 2.4rem;
+    }
+}

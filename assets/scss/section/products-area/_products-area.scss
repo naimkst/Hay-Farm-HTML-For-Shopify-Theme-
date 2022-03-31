@@ -1,0 +1,85 @@
+/*-------------------------
+#.products-area
+--------------------------*/
+.products-slide {
+    .owl-dots {
+        text-align: center;
+        height: 2rem;
+        margin-top: 6rem;
+        .owl-dot {
+            margin: 0 6px;
+            span {
+                display: inline-block;
+                padding: 0;
+                border: none;
+                width: 1.5rem;
+                height: 1.3rem;
+                background-color: #C4C4C4;
+                font-size: 0;
+                line-height: 1;
+                border-radius: 48% 52% 71% 29% / 57% 57% 43% 43% ;
+                transition: $transition;
+            }
+            &.active {
+                span {
+                    width: 1.9rem;
+                    height: 1.7rem;
+                    background: var(--primary-color);
+                }
+            }
+        }
+    }
+    .owl-nav {
+        button {
+            position: absolute;
+            top: 35%;
+            transform: translateY(-50%);
+            &.owl-prev {
+                left: -8rem;
+            }
+            &.owl-next {
+                right: -8rem;
+            }
+        }
+        .nav-btn {
+            @include flex-position(flex,center,center);
+            width: 4.5rem;
+            height: 4.5rem;
+            border-radius: 50%;
+            background: #E9E9E9;
+            color: var(--white);
+            transition: $transition;
+            &:hover {
+                color: var(--white);
+                background: var(--primary-color);
+            }
+        }
+    }
+}
+@media (max-width: 1367px) {
+    .products-slide .owl-nav button.owl-prev {
+        left: -10px;
+    }
+    .products-slide .owl-nav button.owl-next {
+        right: -10px;
+    }
+}
+@media (max-width: 991px) {
+    .products-slide .owl-nav button.owl-prev {
+        left: -15px;
+    }
+    .products-slide .owl-nav button.owl-next {
+        right: -15px;
+    }
+}
+@media (max-width: 767px) {
+    .products-slide .owl-nav button.owl-prev {
+        left: 0;
+    }
+    .products-slide .owl-nav button.owl-next {
+        right: 0;
+    }
+    .products-slide .owl-dots {
+        margin-top: 2rem;
+    }
+}

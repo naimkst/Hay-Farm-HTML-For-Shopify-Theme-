@@ -1,0 +1,14 @@
+/*-------------------------
+#.product-catagory-area
+--------------------------*/
+.product-catagory-area {
+    .product-catagory-wrap {
+        margin-bottom: 7rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .single-product {
+        margin-bottom: 3rem;
+    }
+}

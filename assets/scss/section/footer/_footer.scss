@@ -1,0 +1,110 @@
+/*-------------------------
+#.footer-area
+--------------------------*/
+.footer-area {
+    background-image: url('../images/footer-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding: 10rem 0 7rem 0;
+    .social-media {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            margin: 0 .5rem;
+            a {
+                @include flex-position(flex, center, center);
+                border-radius: 50px;
+                width: 4.6rem;
+                height: 4rem;
+                background: var(--white);
+                color: var(--primary-color);
+                transition: $transition;
+                &:hover {
+                    color: var(--white);
+                    background: var(--primary-color);
+                }
+            }
+        }
+    }
+    .about-widget {
+        text-align: center;
+        .footer-brand-logo {
+            display: inline-block;
+            max-width: 250px;
+        }
+        .social-media {
+            margin-top: 2rem;
+        }
+    }
+    .single-widget {
+        margin-bottom: 3rem;
+        .widget-title {
+            position: relative;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1rem;
+            font-family: $bodyFont;
+            font-size: 2.5rem;
+            text-transform: capitalize;
+            color: var(--white);
+            letter-spacing: 2px;
+            &::before {
+                position: absolute;
+                content: '';
+                background-image: url('../images/widget-title-divider.png');
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 6px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+            }
+        }
+    }
+    .menu-widget {
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                list-style: none;
+                margin-bottom: 1.5rem;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                a {
+                    font-size: 1.8rem;
+                    text-transform: capitalize;
+                    color: var(--white);
+                    transition: $transition;
+                    &:hover {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .footer-area .social-media li {
+        margin: 0 .3rem;
+    }
+    .footer-area .menu-widget ul li a {
+        font-size: 1.6rem;
+    }
+    .footer-area .single-widget .widget-title {
+        font-size: 2.2rem;
+    }
+    .footer-area {
+        padding: 6rem 0 3rem 0;
+    }
+}
+@media (max-width: 575px) {
+    .footer-area .menu-widget ul li {
+        margin-bottom: 1rem;
+    }
+}

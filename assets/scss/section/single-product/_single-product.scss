@@ -1,0 +1,31 @@
+/*-------------------------
+#.single-product
+--------------------------*/
+.single-product {
+    .product-thumbnail {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .product-title {
+        margin: 0;
+        margin-top: 2rem;
+        font-family: $bodyFont;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #7D512E;
+        a {
+            color: #7D512E;
+            transition: $transition;
+            
+        }
+    }
+    &:hover {
+        .product-title {
+            a {
+                color: var(--primary-color);
+            }
+        }
+    }
+}

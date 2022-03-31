@@ -1,0 +1,58 @@
+/*
+------------- Table of content ----------------
+
+Template Name: Back In The Hay Farm
+Template URI: http://hayfarm.com
+Description: Back In The Hay Farm
+Author: Gobinda Sarkar
+Author URI: http://hayfarm.com
+Version: 1.0
+
+---------------------- common content ----------
+1.body reset content
+#.header-area
+#.top-bar-area
+#.hero-banner-area
+#.section-title
+#.featured-categories-area
+#.service-area
+#.single-product
+#.products-area
+#.newsletter-area
+#.image-content-area
+#.product-catagory-area
+#.single-product-details
+#.footer-area
+
+*/
+
+/*-------------------------
+#.single-product-details
+--------------------------*/
+
+
+// variable
+@import "variable/_variable.scss";
+
+// mixin
+@import "mixin/_mixin.scss";
+
+// body reset content
+@import "reset/_predefine.scss";
+
+// component content
+@import "section/header/header";
+@import "section/top-bar-area/top-bar-area";
+@import "section/hero-banner-area/hero-banner-area";
+@import "section/section-title/section-title";
+@import "section/featured-categories-area/featured-categories-area";
+@import "section/service-area/service-area";
+@import "section/single-product/single-product";
+@import "section/products-area/products-area";
+@import "section/newsletter-area/newsletter-area";
+@import "section/image-content-area/image-content-area";
+@import "section/product-catagory-area/product-catagory-area";
+@import "section/single-product-details/single-product-details";
+@import "section/footer/footer";
+
+// page content

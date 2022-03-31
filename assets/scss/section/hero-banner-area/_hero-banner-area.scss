@@ -1,0 +1,94 @@
+/*-------------------------
+#.hero-banner-area
+--------------------------*/
+.hero-banner-area {
+    position: relative;
+    padding: 39rem 0;
+    background-image: url('../images/hero-banner-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: center;
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: url('../images/banner-bg-shape.png');
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+    .banner-bottom-shape {
+        position: absolute;
+        width: 100%;
+        height: 8.5rem;
+        left: 0;
+        bottom: -5px;
+        z-index: -1;
+        background-image: url('../images/banner-bottom-shape.svg');
+    }
+    .banner-title {
+        margin-bottom: 3rem;
+        font-family: $bodyFont;
+        font-size: 6.5rem;
+        text-transform: capitalize;
+        color: var(--white);
+    }
+    .banner-content {
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 3rem;
+        line-height: 4rem;
+        color: var(--white);
+    }
+    .arrow-down-btn {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        bottom: 15%;
+        max-width: 8.5rem;
+    }
+}
+@media (max-width: 1399px) {
+    .hero-banner-area .banner-title {
+        font-size: 4.8rem;
+    }
+    .hero-banner-area .banner-content {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .hero-banner-area .arrow-down-btn {
+        max-width: 6rem;
+    }
+}
+@media (max-width: 1199px) {
+    .hero-banner-area {
+        padding: 30rem 0;
+    }
+    .hero-banner-area .arrow-down-btn {
+        bottom: 20%;
+    }
+}
+@media (max-width: 767px) {
+    .hero-banner-area .banner-title {
+        font-size: 3.6rem;
+        line-height: 5.5rem;
+    }
+    .hero-banner-area .banner-content {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+    .hero-banner-area {
+        padding: 22rem 0;
+    }
+    .hero-banner-area .arrow-down-btn {
+        max-width: 4rem;
+    }
+}

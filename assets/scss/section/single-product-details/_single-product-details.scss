@@ -1,0 +1,79 @@
+/*-------------------------
+#.single-product-details
+--------------------------*/
+.single-product-details {
+    .size-switch {
+        display: flex;
+        .single-size {
+            input {
+                display: none;
+            }
+            label {
+                @include flex-position(flex, center, center);
+                flex-flow: row wrap;
+                position: relative;
+                z-index: 1;
+                width: 160px;
+                height: 88px;
+                cursor: pointer;
+                -webkit-touch-callout: none; 
+                -webkit-user-select: none; 
+                -khtml-user-select: none; 
+                -moz-user-select: none; 
+                    -ms-user-select: none; 
+                        user-select: none;
+                span {
+                    display: block;
+                    text-align: center;
+                    font-size: 2rem;
+                    color: var(--white);
+                    line-height: 1.3;
+                    span {
+                        font-size: 1.5rem;
+                        line-height: 1.3;
+                    }
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: -1;
+                    opacity: .4;
+                }
+            }
+            label input:checked ~ img {
+                opacity: 1;
+            }
+        }
+    }
+    .single-product-info {
+        h2 {
+            margin-bottom: 2.5rem;
+            font-size: 4.8rem;
+            color: var(--primary-color);
+        }
+        p {
+            margin-bottom: 5rem;
+            font-size: 2rem;
+            line-height: 3.2rem;
+            color: var(--bColor);
+        }
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 5.5rem;
+            padding-left: 1.5rem;
+            li {
+                margin-bottom: 1rem;
+                list-style: disc;
+                font-size: 2rem;
+                text-transform: capitalize;
+                color: var(--bColor);
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

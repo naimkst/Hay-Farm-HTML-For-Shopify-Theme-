@@ -1,0 +1,29 @@
+/*-------------------------
+#.featured-categories-area
+--------------------------*/
+.featured-categories-area {
+    .sigle-featured-categories {
+        margin-bottom: 3rem;
+        .categories-thumbnail {
+            margin-bottom: 4rem;
+            img {
+                width: 100%;
+                min-height: 445px;
+                object-fit: content;
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .featured-categories-area .sigle-featured-categories .categories-thumbnail img {
+        min-height: 300px;
+    }
+    .featured-categories-area .sigle-featured-categories .categories-thumbnail {
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width: 767px) {
+    .featured-categories-area .sigle-featured-categories .categories-thumbnail img {
+        min-height: auto;
+    }
+}
