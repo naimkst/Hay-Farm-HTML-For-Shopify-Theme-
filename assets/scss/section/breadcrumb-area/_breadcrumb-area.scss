@@ -1,0 +1,60 @@
+/*-------------------------
+#.breadcrumb-area
+--------------------------*/
+.breadcrumb-area {
+    position: relative;
+    padding: 40rem 0 20rem 0;
+    background-image: url('../images/hero-banner-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-image: url('../images/banner-bg-shape.png');
+        background-repeat: repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+    .banner-bottom-shape {
+        position: absolute;
+        width: 100%;
+        height: 8.5rem;
+        left: 0;
+        bottom: -5px;
+        z-index: -1;
+        background-image: url('../images/banner-bottom-shape.svg');
+    }
+    .page-title {
+        margin: 0;
+        font-size: 14rem;
+        line-height: 1.3;
+        text-transform: uppercase;
+        color: var(--white);
+    }
+}
+@media (max-width: 1199px) {
+    .breadcrumb-area .page-title {
+        font-size: 6rem;
+    }
+    .breadcrumb-area {
+        padding: 30rem 0 15rem 0;
+    }
+}
+@media (max-width: 575px) {
+    .breadcrumb-area .page-title {
+        font-size: 4rem;
+    }
+}
+@media (max-width: 375px) {
+    .breadcrumb-area {
+        padding: 23rem 0 12rem 0;
+    }
+}

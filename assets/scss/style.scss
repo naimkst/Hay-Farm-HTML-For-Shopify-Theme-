@@ -22,13 +22,20 @@ Version: 1.0
 #.image-content-area
 #.product-catagory-area
 #.single-product-details
+#.breadcrumb-area
+#.primary-form
+#.wanna-book-area
+#.primary-accordion
+#.about-banner-area
+#.farm-area
+#.site-glossary-area
+#.our-farm-area
+#.meet-our-farmer
+#.how-started-area
 #.footer-area
 
 */
 
-/*-------------------------
-#.single-product-details
---------------------------*/
 
 
 // variable
@@ -53,6 +60,16 @@ Version: 1.0
 @import "section/image-content-area/image-content-area";
 @import "section/product-catagory-area/product-catagory-area";
 @import "section/single-product-details/single-product-details";
+@import "section/breadcrumb-area/breadcrumb-area";
+@import "section/primary-form/primary-form";
+@import "section/wanna-book-area/wanna-book-area";
+@import "section/primary-accordion/primary-accordion";
+@import "section/about-banner-area/about-banner-area";
+@import "section/farm-area/farm-area";
+@import "section/site-glossary-area/site-glossary-area";
+@import "section/our-farm-area/our-farm-area";
+@import "section/meet-our-farmer/meet-our-farmer";
+@import "section/how-started-area/how-started-area";
 @import "section/footer/footer";
 
-// page content
+

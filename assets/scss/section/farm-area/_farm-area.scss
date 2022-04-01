@@ -1,0 +1,54 @@
+/*-------------------------
+#.farm-area
+--------------------------*/
+.farm-area {
+    .single-farm {
+        margin-bottom: 3rem;
+        .farm-thumbnail {
+            margin-bottom: 4rem;
+        }
+        .text-btn {
+            display: inline-block;
+            font-family: $titleFont;
+            font-size: 4.8rem;
+            padding-bottom: 2rem;
+        }
+    }
+    .farm-text {
+        margin-top: 12rem;
+        h2 {
+            margin: 0;
+            font-size: 4.8rem;
+            line-height: 5.8rem;
+            color: #7C7C7C;
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .farm-area .farm-text h2 {
+        font-size: 3.2rem;
+        line-height: 4.2rem;
+    }
+}
+@media (max-width: 991px) {
+    .farm-area .single-farm .text-btn {
+        font-size: 3.2rem;
+    }
+    .farm-area .farm-text {
+        margin-top: 7rem;
+    }
+}
+@media (max-width: 768px) {
+    .farm-area .single-farm .text-btn {
+        font-size: 2.6rem;
+    }
+}
+@media (max-width: 575px) {
+    .farm-area .farm-text h2 {
+        font-size: 2.6rem;
+        line-height: 3.6rem;
+    }
+    .farm-area .farm-text {
+        margin-top: 4rem;
+    }
+}

@@ -1,0 +1,39 @@
+/*-------------------------
+#.how-started-area
+--------------------------*/
+.how-started-area {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    .traced-three {
+        position: absolute;
+        bottom: -80px;
+        right: 0;
+        z-index: -1;
+        max-width: 35rem;
+    }
+    .how-started-content {
+        p {
+            text-align: center;
+        }
+        .how-started-image {
+            float: left;
+            clear: both;
+            margin-right: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .how-started-area .how-started-content p {
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 767px) {
+    .how-started-area .how-started-content .how-started-image {
+        float: inherit;
+        margin-right: 0;
+        width: 100%;
+    }
+}

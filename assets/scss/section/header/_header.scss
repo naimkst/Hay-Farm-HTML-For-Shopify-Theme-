@@ -21,6 +21,12 @@
             }
         }
     }
+    .navbar {
+        padding: 0;
+        .navbar-brand {
+            padding: 0;
+        }
+    }
     .header-area-bottom {
         max-width: 90%;
         margin: 0 auto;
@@ -135,11 +141,15 @@
     }
     .header-area .header-right {
         padding: 1.5rem;
+        margin-top: 2rem;
     }
-    .header-area .navbar-collapse {
-        background-color: var(--primary-color);
+    .header-area.header-transparent .navbar-collapse {
+        background-color: #A41E27;
     }
-    
+    .header-area .navbar-nav .nav-item .nav-link.active::before {
+        background-position: left;
+        background-size: auto;
+    }
 }
 @media (max-width: 575px) {
     .header-area .navbar-light .navbar-toggler {

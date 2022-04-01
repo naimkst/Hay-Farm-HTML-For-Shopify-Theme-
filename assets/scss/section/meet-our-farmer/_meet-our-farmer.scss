@@ -1,0 +1,60 @@
+/*-------------------------
+#.meet-our-farmer
+--------------------------*/
+.meet-our-farmer {
+    position: relative;
+    .traced-two {
+        position: absolute;
+        top: -150px;
+        left: -30px;
+        max-width: 35rem;
+    }
+    .traced-three {
+        position: absolute;
+        bottom: 0;
+        left: -45px;
+        z-index: -1;
+        max-width: 27rem;
+    }
+    .meet-farmer-content {
+        .meet-farmer-image {
+            float: right;
+            clear: left;
+            margin-bottom: 4rem;
+            margin-left: 3rem;
+        }
+        p {
+            margin-bottom: 2.5rem;
+            font-size: 2rem;
+            line-height: 1.5;
+            color: var(--bColor);
+            span {
+                font-size: 3rem;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .meet-our-farmer .meet-farmer-content .meet-farmer-image {
+        max-width: 360px;
+    }
+    .meet-our-farmer .meet-farmer-content p {
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+    }
+    .meet-our-farmer .meet-farmer-content p span {
+        font-size: 2.2rem;
+    }
+    .meet-our-farmer .traced-two {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .meet-our-farmer .meet-farmer-content .meet-farmer-image {
+        float: inherit;
+        margin-left: 0;
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+}

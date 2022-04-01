@@ -99,6 +99,7 @@
         font-size: 2.6rem;
     }
 }
+
 @media (max-width: 480px) {
     .newsletter-area .newsletter-section-wraper .newsletter-form .newsletter-title {
         font-size: 2.2rem;
@@ -109,5 +110,10 @@
     }
     .newsletter-area .newsletter-section-wraper .newsletter-form {
         max-width: 90%;
+    }
+}
+@media (max-width: 375px) {
+    .newsletter-area .newsletter-section-wraper .newsletter-left {
+        height: 30rem;
     }
 }

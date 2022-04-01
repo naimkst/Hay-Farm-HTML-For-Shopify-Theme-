@@ -1,0 +1,33 @@
+/*-------------------------
+#.wanna-book-area
+--------------------------*/
+.wanna-book-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    background-image: url('../images/wanna-book-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden;
+    .primary-text-btn {
+        margin: 0;
+    }
+    .image-box {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+        max-width: 50%;
+    }
+}
+@media (max-width: 991px) {
+    .wanna-book-area {
+        min-height: auto;
+    }
+}

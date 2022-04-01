@@ -1,0 +1,65 @@
+/*-------------------------
+#.primary-accordion
+--------------------------*/
+.primary-accordion {
+    border: 1px solid #7D512E;
+    .accordion-item {
+        border-bottom: 1px solid #7D512E;
+        &:last-child {
+            border-bottom: none;
+        }
+        .accordion-button {
+            padding: 2.5rem 4.5rem;
+            box-shadow: none;
+            font-family: $bodyFont;
+            font-size: 2.3rem;
+            text-transform: capitalize;
+            color: #7D512E;
+            background: transparent;
+            &::after {
+                flex-shrink: 0;
+                width: auto;
+                height: auto;
+                margin-left: auto;
+                content: "\f0d7";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                background: transparent;
+                background-repeat: no-repeat;
+                background-size: 1.25rem;
+                transition: transform .2s ease-in-out;
+            }
+        }
+        .accordion-body {
+            padding: 2.5rem 4.5rem;
+            p {
+                margin-bottom: 2.5rem;
+                font-size: 2rem;
+                line-height: 3rem;
+                color: var(--bColor);
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .primary-accordion .accordion-item .accordion-button {
+        padding: 1.5rem 2.5rem;
+        font-size: 1.8rem;
+    }
+    .primary-accordion .accordion-item .accordion-body {
+        padding: 1.5rem 2.5rem;
+    }
+    .primary-accordion .accordion-item .accordion-body p {
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+}
+@media (max-width: 480px) {
+    .primary-accordion .accordion-item .accordion-button {
+        padding: 1.5rem;
+    }
+    .primary-accordion .accordion-item .accordion-body {
+        padding: 1.5rem;
+    }
+}
