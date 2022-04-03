@@ -125,12 +125,12 @@
         width: 5rem;
         height: 5rem;
         border: none;
-        background-color: var(--primary-color);
         color: var(--white);
         padding: 0;
         font-size: 2.4rem;
         transition: $transition;
         box-shadow: none;
+        background-color: var(--primary-color);
         &:hover {
             background-color: var(--hover-color);
             color: var(--white);
@@ -142,9 +142,6 @@
     .header-area .header-right {
         padding: 1.5rem;
         margin-top: 2rem;
-    }
-    .header-area.header-transparent .navbar-collapse {
-        background-color: #A41E27;
     }
     .header-area .navbar-nav .nav-item .nav-link.active::before {
         background-position: left;

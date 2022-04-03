@@ -530,7 +530,6 @@ scrollUp
     box-shadow: none;
     background: transparent;
     i {
-        color: #646464;
         transition: all .3s;
     }
     &::before {
@@ -642,5 +641,8 @@ scrollUp
 @media (max-width: 767px) {
     .join-email-btn-area.mt-80 {
         margin-top: 5rem;
+    }
+    .mt-100 {
+        margin-top: 6rem;
     }
 }

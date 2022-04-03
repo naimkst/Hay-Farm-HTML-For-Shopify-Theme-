@@ -33,6 +33,16 @@
             }
         }
     }
+    p {
+        margin-bottom: 2.5rem;
+        font-size: 2rem;
+        line-height: 1.5;
+        color: var(--bColor);
+        span {
+            font-size: 3rem;
+            text-transform: capitalize;
+        }
+    }
 }
 @media (max-width: 575px) {
     .our-farm-area .schedule-tour-btn {
