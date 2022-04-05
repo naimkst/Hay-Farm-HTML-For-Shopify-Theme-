@@ -25,6 +25,7 @@
         padding: 0;
         .navbar-brand {
             padding: 0;
+            margin-right: 0;
         }
     }
     .header-area-bottom {
@@ -140,18 +141,30 @@
         max-width: 100%;
     }
     .header-area .header-right {
-        padding: 1.5rem;
-        margin-top: 2rem;
+        margin-right: 2rem;
+    }
+    .header-area .header-right ul li {
+        margin-right: 2rem;
     }
     .header-area .navbar-nav .nav-item .nav-link.active::before {
         background-position: left;
         background-size: auto;
     }
+    .header-area.header-transparent .navbar-nav .nav-item .nav-link {
+        color: #7D512E;
+    }
+    
 }
 @media (max-width: 575px) {
     .header-area .navbar-light .navbar-toggler {
         width: 4rem;
         height: 4rem;
+    }
+    .header-area .header-right {
+        margin-right: 1rem;
+    }
+    .header-area .header-right ul li {
+        margin-right: 1rem;
     }
 }
 @media (max-width: 414px) {

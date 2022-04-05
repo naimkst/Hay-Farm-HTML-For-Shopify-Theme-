@@ -7,6 +7,8 @@
     background-size: cover;
     background-position: top center;
     padding: 10rem 0 7rem 0;
+    display: flex;
+    align-items: center;
     .social-media {
         display: flex;
         flex-flow: row wrap;
@@ -24,6 +26,7 @@
                 background: var(--white);
                 color: var(--primary-color);
                 transition: $transition;
+                font-size: 2rem;
                 &:hover {
                     color: var(--white);
                     background: var(--primary-color);
@@ -72,17 +75,17 @@
             padding: 0;
             li {
                 list-style: none;
-                margin-bottom: 1.5rem;
+                margin-bottom: 2.5rem;
                 &:last-child {
                     margin-bottom: 0;
                 }
                 a {
                     position: relative;
-                    font-size: 1.8rem;
+                    font-size: 2.4rem;
                     text-transform: capitalize;
                     color: var(--white);
                     transition: $transition;
-                    padding-bottom: .8rem;
+                    padding-bottom: .5rem;
                     &::before {
                         position: absolute;
                         content: '';
@@ -105,7 +108,7 @@
     .contact-widget {
         p {
             margin: 0;
-            font-size: 2.4rem;
+            font-size: 2rem;
             line-height: 6rem;
             color: var(--white);
         }
@@ -125,8 +128,18 @@
         padding: 6rem 0 3rem 0;
     }
 }
+
+@media (max-width: 991px) {
+    .footer-area .contact-widget p {
+        font-size: 1.8rem;
+        line-height: 4rem;
+    }
+}
 @media (max-width: 575px) {
     .footer-area .menu-widget ul li {
         margin-bottom: 1rem;
+    }
+    .footer-area {
+        padding: 6rem 0 0 0;
     }
 }

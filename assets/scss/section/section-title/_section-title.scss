@@ -23,6 +23,14 @@
     text-transform: capitalize;
     color: var(--primary-color);
 }
+.finding-something-title {
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: $bodyFont;
+    font-size: 3.5rem;
+    line-height: 4.7rem;
+    color: var(--primary-color);
+}
 @media (max-width: 991px) {
     .section-title h2 {
         font-size: 4rem;
@@ -48,5 +56,9 @@
     .section-inner-title {
         margin-bottom: 3.2rem;
         font-size: 3rem;
+    }
+    .finding-something-title {
+        font-size: 3.2rem;
+        line-height: 4.5rem;
     }
 }
