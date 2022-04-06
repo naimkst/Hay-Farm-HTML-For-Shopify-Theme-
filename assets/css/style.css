@@ -825,6 +825,7 @@ scrollUp
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-right: 15rem;
 }
 .header-area .navbar-nav .nav-item {
   margin-right: 3rem;
@@ -898,6 +899,10 @@ scrollUp
   .header-area .navbar-brand img {
     max-width: 18rem;
   }
+
+  .header-area .navbar-nav {
+    padding-right: 7rem;
+  }
 }
 @media (max-width: 1199px) {
   .header-area .navbar-nav .nav-item .nav-link {
@@ -915,8 +920,16 @@ scrollUp
   .header-area .header-area-bottom {
     padding: 1.5rem 0;
   }
+
+  .header-area .navbar-nav {
+    padding-right: 8rem;
+  }
 }
 @media (max-width: 991px) {
+  .header-area .navbar-nav {
+    padding-right: 0;
+  }
+
   .header-area .navbar-brand img {
     max-width: 16rem;
   }
