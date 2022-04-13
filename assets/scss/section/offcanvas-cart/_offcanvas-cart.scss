@@ -1,0 +1,148 @@
+/*-------------------------
+#.offcanvas-cart
+--------------------------*/
+.offcanvas-cart {
+    padding: 2.5rem;
+    background-color: #DDD7D3;
+    border: none;
+    .cart-top-title {
+        font-family: $bodyFont;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: var(--bColor);
+    }
+    .offcanvas-header {
+        margin: 1rem 0;
+        border-bottom: 2px solid #9F9994;
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+    .btn-close {
+        background: transparent;
+        font-size: 1.8rem;
+        color: var(--bColor);
+        box-shadow: none;
+        border: none;
+    }
+    .offcanvas-body {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .cart-item-list {
+        .single-card-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #C8C1BA;
+            .product-image {
+                padding: 5px;
+                border: 1px solid #C8C1BA;
+                width: 6rem;
+                height: 6rem;
+                img {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                }
+            }
+            .product-qty {
+                height: 4rem;
+                width: 8rem;
+                display: flex;
+                align-items: center;
+                border: 1px solid #9F9994;
+                .qty-input {
+                    width: 50%;
+                    text-align: center;
+                    background: transparent;
+                    border: none;
+                    box-shadow: none;
+                    font-family: $bodyFont;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    color: var(--bColor);
+                }
+                .qty-btn {
+                    padding: 0;
+                    width: 25%;
+                    border: none;
+                    background: transparent;
+                    font-family: $bodyFont;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: var(--bColor);
+                }
+            }
+            .product-info {
+                .product-name {
+                    margin: 0;
+                    font-family: $bodyFont;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                    color: var(--bColor);
+                }
+                .product-quantity {
+                    display: inline-block;
+                    font-family: $bodyFont;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: var(--bColor);
+                }
+            }
+            .product-price {
+                .price {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    color: var(--bColor);
+                }
+            }
+        }
+    }
+    .sub-total-area {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+        .subtotal-title {
+            margin: 0;
+            font-family: $bodyFont;
+            font-size: 1.6rem;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: var(--bColor)
+        }
+        .subtotal-price {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--bColor);
+        }
+    }
+    .checkout-btn {
+        display: block;
+        width: 100%;
+        padding: 1.2rem 1rem;
+        background-color: var(--primary-color);
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--white);
+    }
+}
+@media (max-width: 360px) {
+    .offcanvas-cart {
+        padding: 1.5rem;
+    }
+    .offcanvas-cart .cart-item-list .single-card-item .product-qty {
+        width: 7rem;
+    }
+    .offcanvas-cart .cart-item-list .single-card-item .product-image {
+        padding: 3px;
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}

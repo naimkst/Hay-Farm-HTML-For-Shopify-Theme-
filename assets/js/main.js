@@ -82,6 +82,24 @@
       }
     })
     /*-------------------------------------------
+    Product Quantity JS
+    --------------------------------------------- */
+    $('.qty-btn').on('click', function (e) {
+      e.preventDefault();
+      var $button = $(this);
+      var oldValue = $button.parent().find('input').val();
+      if ($button.hasClass('inc')) {
+        var newVal = parseFloat(oldValue) + 1;
+      } else {
+        if (oldValue > 1) {
+          var newVal = parseFloat(oldValue) - 1;
+        } else {
+          newVal = 1;
+        }
+      }
+      $button.parent().find('input').val(newVal);
+    });
+    /*-------------------------------------------
     js counterUp
     --------------------------------------------- */
     $('.counter').counterUp({

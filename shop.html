@@ -82,7 +82,7 @@
                         <div class="d-none d-lg-flex header-right">
                             <ul>
                                 <li><a href="#"><img src="assets/images/user.svg" alt="user" /></a></li>
-                                <li><a href="#"><img src="assets/images/cart.svg" alt="cart" /></a></li>
+                                <li><a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"><img src="assets/images/cart.svg" alt="cart" /></a></li>
                             </ul>
                         </div>
                     </div>
@@ -388,6 +388,61 @@
         </div>
     </footer>
     <!-- footer area end here  -->
+    <!-- offcanvas-cart start here  -->
+    <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="offcanvasCart">
+        <div class="offcanvas-header">
+          <h3 class="cart-top-title">your bag</h3>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="offcanvas-boty-top">
+                <div class="cart-item-list">
+                    <div class="single-card-item">
+                        <div class="product-image">
+                            <img src="assets/images/single-product-image.png" alt="item" />
+                        </div>
+                        <div class="product-info">
+                          <h4 class="product-name">product name</h4>
+                          <span class="product-quantity">2Lb</span>
+                        </div>
+                        <div class="product-qty">
+                            <button class="dec qty-btn">-</button>
+                            <input class="qty-input" type="text" title="Quantity" value="1" readonly />
+                            <button class="inc qty-btn">+</button>
+                        </div>
+                        <div class="product-price">
+                          <h4 class="price">$45</h4>
+                        </div>
+                    </div>
+                    <div class="single-card-item">
+                        <div class="product-image">
+                            <img src="assets/images/single-product-image.png" alt="item" />
+                        </div>
+                        <div class="product-info">
+                          <h4 class="product-name">product name</h4>
+                          <span class="product-quantity">3Lb</span>
+                        </div>
+                        <div class="product-qty">
+                            <button class="dec qty-btn">-</button>
+                            <input class="qty-input" type="text" title="Quantity" value="1" readonly />
+                            <button class="inc qty-btn">+</button>
+                        </div>
+                        <div class="product-price">
+                          <h4 class="price">$45</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-total-area">
+                    <h4 class="subtotal-title">subtotal</h4>
+                    <span class="subtotal-price">$100</span>
+                </div>
+            </div>
+            <div class="offcanvas-boty-bottom">
+                <a href="#" class="checkout-btn">checkout</a>
+            </div>
+        </div>
+    </div>
+    <!-- offcanvas-cart end here  -->
     <!-- Js file  -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
